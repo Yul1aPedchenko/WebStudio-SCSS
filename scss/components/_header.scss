@@ -1,0 +1,114 @@
+.header {
+    border-bottom: 1px solid #ECECEC;
+    &__wrapper {
+        color: $titleTextColor;
+        font-weight: 500;
+        letter-spacing: 0.28px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 25px;
+        margin-bottom: 24px;
+    }
+}
+
+.header__logo {
+    color: $logoColor;
+    font-family: 'Raleway';
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 0.78px;
+    &__blue {
+        color: $buttonBgColor;
+    }
+}
+
+.nav {
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item:not(:last-child) {
+        margin-right: 50px;
+    }
+}
+
+.nav__link {
+    position: relative;
+    transition: color 250ms $timeFunction;
+    &_:not(:last-child) {
+        text-decoration: none;
+        color: $titleTextColor;
+        margin-right: 50px;
+    }
+    &:hover,
+    &:focus {
+        color: $buttonBgColor;
+    }
+    &k--active {
+        color: $buttonBgColor;
+        position: relative;
+    }
+}
+
+.nav__link.nav__link--active::after {
+    content: '';
+    display: block;
+    width: 48px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: $buttonBgColor;
+    position: absolute;
+    left: 0;
+    top: 44.5px;
+    width: 100%;
+    transition: background-color 250ms $timeFunction;
+}
+
+.nav__link:hover {
+    &--active::after {
+        background-color: $buttonHoverColor;
+        transition: background-color 250ms $timeFunction;
+    }
+}
+
+.contacts-list {
+    display: flex;
+    &__item {
+        display: flex;
+        align-items: center;
+    }
+    &__info {
+        display: flex;
+        align-items: center;
+        transition: color 250ms $timeFunction;
+    }
+    &__info-email {
+        margin-right: 30px;
+    }
+}
+
+.contacts-list__icon {
+    margin-right: 10px;
+    fill: $primaryTextColor;
+    &_:hover {
+        color: $buttonBgColor;
+    }
+}
+
+.contacts-list__info:hover {
+    .contacts-list__icon {
+        animation: cgHeader 250ms $timeFunction;
+        animation-fill-mode: forwards;
+    }
+}
+
+@keyframes cgHeader {
+    0% {
+        fill: $primaryTextColor;
+    }
+
+    100% {
+        fill: $buttonBgColor;
+    }
+}
