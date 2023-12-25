@@ -1,0 +1,43 @@
+.buttons {
+    &__section {
+        padding-top: 94px;
+        padding-bottom: 50px;
+    }
+    &__list {
+        display: flex;
+        justify-content: center;
+    }
+    &__wrapper:not(:last-child) {
+        margin-right: 8px;
+    }
+}
+
+.buttons__item {
+    background-color: $buttonOffBgColor;
+    color: $titleTextColor;
+    border-radius: 4px;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0.48px;
+    padding: 6px 25px;
+    transition-property: background-color, color;
+    transition-duration: 250ms, 250ms;
+    transition-timing-function: $timeFunction, $timeFunction;
+    &:hover,
+    &:focus {
+        background-color: $buttonBgColor;
+        color: $secondaryTextColor;
+        box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+    }
+    &--active {
+        background-color: $buttonBgColor;
+        color: $secondaryTextColor;
+        box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+        transition: background-color 250ms $timeFunction;
+    }
+    &--active:hover {
+        background-color: $buttonHoverColor;
+    }
+}
