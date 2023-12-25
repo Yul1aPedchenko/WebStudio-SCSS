@@ -53,7 +53,7 @@
                 <h1 class="post__title">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
                 <button class="post__btn" data-modal-open>Замовити послугу</button>
             </div>
-             <div class="post__backdrop post__is-hidden" data-modal>
+             <div class="backdrop is-hidden" data-modal>
                 <div class="post-modal">
                     <div class="post-modal__box-close" data-modal-close>
                         <svg class="post-modal__icon-close" width="18" height="18">
@@ -80,8 +80,8 @@
                                     </svg>
                                 </label>
                             </div>
-                            <div class="post-modal_form-field">
-                                <label class="post-moda__label" for="">
+                            <div class="post-modal__form-field">
+                                <label class="post-modal__label" for="">
                                     Пошта
                                     <input class="post-modal__input" type="email" id="mail" required>
                                     <svg class="post-modal__svg" width="18" height="18">
@@ -93,7 +93,7 @@
                                 <label class="post-modal__label post-modal__label--comment" for="comment">
                                     Коментар
                                 </label>
-                                <textarea class="post-modal__input post-modal__text-comment" type="text" id="comment" placeholder="Введіть текст"></textarea>
+                                <textarea class="post-modal__input post-modal__text--comment" type="text" id="comment" placeholder="Введіть текст"></textarea>
                             </div>
                             <div class="post-modal__form-field-last">
                                 <label class="label-checkbox">
@@ -109,29 +109,29 @@
 
         <div>
             <div class="benefits container">
-                <ul class="benefits-list">
-                    <li class="benefits-block">
-                        <div class="benefits-info">
-                            <h4 class="benefits-title">УВАГА ДО ДЕТАЛЕЙ</h4>
-                            <p class="benefits-text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
+                <ul class="benefits__list">
+                    <li class="benefits__block">
+                        <div class="benefits__info">
+                            <h4 class="benefits__title">УВАГА ДО ДЕТАЛЕЙ</h4>
+                            <p class="benefits__text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
                         </div>
                     </li>
-                    <li class="benefits-block">
-                        <div class="benefits-info">
-                            <h4 class="benefits-title">ПУНКТУАЛЬНІСТЬ</h4>
-                            <p class="benefits-text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
+                    <li class="benefits__block">
+                        <div class="benefits__info">
+                            <h4 class="benefits__title">ПУНКТУАЛЬНІСТЬ</h4>
+                            <p class="benefits__text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
                         </div>
                     </li>
-                    <li class="benefits-block">
-                        <div class="benefits-info">
-                            <h4 class="benefits-title">ПЛАНУВАННЯ</h4>
-                            <p class="benefits-text">Так само консультація з широким активом значною мірою зумовлює.</p>
+                    <li class="benefits__block">
+                        <div class="benefits__info">
+                            <h4 class="benefits__title">ПЛАНУВАННЯ</h4>
+                            <p class="benefits__text">Так само консультація з широким активом значною мірою зумовлює.</p>
                         </div>
                     </li>
-                    <li class="benefits-block">
-                        <div class="benefits-info">
-                            <h4 class="benefits-title">СУЧАСНІ ТЕХНОЛОГІЇ</h4>
-                            <p class="benefits-text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
+                    <li class="benefits__block">
+                        <div class="benefits__info">
+                            <h4 class="benefits__title">СУЧАСНІ ТЕХНОЛОГІЇ</h4>
+                            <p class="benefits__text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
                         </div>
                     </li>
                 </ul>
@@ -140,21 +140,21 @@
             <section class="activity">
                 <div class="container">
                     <div>
-                        <h2 class="sectionTitle">Чим ми займаємося</h2>
+                        <h2 class="section__title">Чим ми займаємося</h2>
                     </div>
-                    <div class="activity-list-box">
-                        <ul class="activity-list">
-                            <li class="activity-item">
+                    <div class="activity__list-box">
+                        <ul class="activity__list">
+                            <li class="activity__item">
                                 <img src="img/img.jpg" alt="" class="activity-img">
-                                <p class="activity-text">Десктопні додатки</p>
+                                <p class="activity__text">Десктопні додатки</p>
                             </li>
-                            <li class="activity-item">
+                            <li class="activity__item">
                                 <img src="img/img-1.jpg" alt="" class="activity-img">
-                                <p class="activity-text">Мобільні додатки</p>
+                                <p class="activity__text">Мобільні додатки</p>
                             </li>
-                            <li class="activity-item">
+                            <li class="activity__item">
                                 <img src="img/img-2.jpg" alt="" class="activity-img">
-                                <p class="activity-text">дизайнерські рішення</p>
+                                <p class="activity__text">дизайнерські рішення</p>
                             </li>
                         </ul>
                     </div>
@@ -163,40 +163,40 @@
 
             <section class="team">
                 <div class="container">
-                    <h2 class="sectionTitle">Наша команда</h2>
-                        <ul class="team-list">
-                            <li class="teamCard">
+                    <h2 class="section__title">Наша команда</h2>
+                        <ul class="team__list">
+                            <li class="team__card">
                                     <div>
-                                        <img src="img/i.jpg" alt="" class="card-img">
+                                        <img src="img/i.jpg" alt="" class="team__img">
                                     </div>
-                                    <h4 class="teamName">Ігор Дем'яненко</h4>
-                                    <p class="position">Product Designer</p>
-                                    <div class="social-net">
-                                        <ul class="social-net-list">
-                                            <li class="social-net-item">
-                                                <a class="sn-border">
-                                                    <svg class="social-net-icon" width="20" height="20">
+                                    <h4 class="team__name">Ігор Дем'яненко</h4>
+                                    <p class="team__position">Product Designer</p>
+                                    <div class="team__social-net">
+                                        <ul class="team__social-net__list">
+                                            <li class="team__social-net__item">
+                                                <a class="team__sn-border">
+                                                    <svg class="team__social-net__icon" width="20" height="20">
                                                         <use href="img/symbol-defs.svg#icon-instagram"></use>
                                                     </svg>
                                                 </a>
                                             </li>
-                                            <li class="social-net-item">
-                                                <a class="sn-border">
-                                                    <svg class="social-net-icon" width="20" height="20">
+                                            <li class="team__social-net__item">
+                                                <a class="team__sn-border">
+                                                    <svg class="team__social-net__icon" width="20" height="20">
                                                         <use href="img/symbol-defs.svg#icon-twitter"></use>
                                                     </svg>
                                                 </a>
                                             </li>
-                                            <li class="social-net-item">
-                                                <a class="sn-border">
-                                                    <svg class="social-net-icon" width="20" height="20">
+                                            <li class="team__social-net__item">
+                                                <a class="team__sn-border">
+                                                    <svg class="team__social-net__icon" width="20" height="20">
                                                         <use href="img/symbol-defs.svg#icon-facebook"></use>
                                                     </svg>
                                                 </a>
                                             </li>
-                                            <li class="social-net-item">
-                                                <a class="sn-border">
-                                                    <svg class="social-net-icon" width="20" height="20">
+                                            <li class="team__social-net__item">
+                                                <a class="team__sn-border">
+                                                    <svg class="team__social-net__icon" width="20" height="20">
                                                         <use href="img/symbol-defs.svg#icon-linkedin"></use>
                                                     </svg>
                                                 </a>
@@ -204,38 +204,38 @@
                                         </ul>
                                     </div>
                             </li>
-                            <li class="teamCard">
+                            <li class="team__card">
                                     <div>
-                                        <img src="img/o.jpg" alt="" class="card-img">
+                                        <img src="img/o.jpg" alt="" class="team__img">
                                     </div>
-                                    <h4 class="teamName">Ольга Рєпіна</h4>
-                                    <p class="position">Frontend Developer</p>
-                                    <div class="social-net">
-                                        <ul class="social-net-list">
-                                            <li class="social-net-item">
-                                                <a class="sn-border">
-                                                    <svg class="social-net-icon" width="20" height="20">
+                                    <h4 class="team__name">Ольга Рєпіна</h4>
+                                    <p class="team__position">Frontend Developer</p>
+                                    <div class="team__social-net">
+                                        <ul class="team__social-net__list">
+                                            <li class="team__social-net__item">
+                                                <a class="team__sn-border">
+                                                    <svg class="team__social-net__icon" width="20" height="20">
                                                         <use href="img/symbol-defs.svg#icon-instagram"></use>
                                                     </svg>
                                                 </a>
                                             </li>
-                                            <li class="social-net-item">
-                                                <a class="sn-border">
-                                                    <svg class="social-net-icon" width="20" height="20">
+                                            <li class="team__social-net__item">
+                                                <a class="team__sn-border">
+                                                    <svg class="team__social-net__icon" width="20" height="20">
                                                         <use href="img/symbol-defs.svg#icon-twitter"></use>
                                                     </svg>
                                                 </a>
                                             </li>
-                                            <li class="social-net-item">
-                                                <a class="sn-border">
-                                                    <svg class="social-net-icon" width="20" height="20">
+                                            <li class="team__social-net__item">
+                                                <a class="team__sn-border">
+                                                    <svg class="team__social-net__icon" width="20" height="20">
                                                         <use href="img/symbol-defs.svg#icon-facebook"></use>
                                                     </svg>
                                                 </a>
                                             </li>
-                                            <li class="social-net-item">
-                                                <a class="sn-border">
-                                                    <svg class="social-net-icon" width="20" height="20">
+                                            <li class="team__social-net__item">
+                                                <a class="team__sn-border">
+                                                    <svg class="team__social-net__icon" width="20" height="20">
                                                         <use href="img/symbol-defs.svg#icon-linkedin"></use>
                                                     </svg>
                                                 </a>
@@ -243,38 +243,38 @@
                                         </ul>
                                     </div>
                             </li>
-                            <li class="teamCard">
+                            <li class="team__card">
                                     <div>
-                                        <img src="img/mk.jpg" alt="" class="card-img">
+                                        <img src="img/mk.jpg" alt="" class="team__img">
                                     </div>
-                                    <h4 class="teamName">Микола Тарасов</h4>
-                                    <p class="position">Marketing</p>
-                                    <div class="social-net">
-                                        <ul class="social-net-list">
-                                            <li class="social-net-item">
-                                                <a class="sn-border">
-                                                    <svg class="social-net-icon" width="20" height="20">
+                                    <h4 class="team__name">Микола Тарасов</h4>
+                                    <p class="team__position">Marketing</p>
+                                    <div class="team__social-net">
+                                        <ul class="team__social-net__list">
+                                            <li class="team__social-net__item">
+                                                <a class="team__sn-border">
+                                                    <svg class="team__social-net__icon" width="20" height="20">
                                                         <use href="img/symbol-defs.svg#icon-instagram"></use>
                                                     </svg>
                                                 </a>
                                             </li>
-                                            <li class="social-net-item">
-                                                <a class="sn-border">
-                                                    <svg class="social-net-icon" width="20" height="20">
+                                            <li class="team__social-net__item">
+                                                <a class="team__sn-border">
+                                                    <svg class="team__social-net__icon" width="20" height="20">
                                                         <use href="img/symbol-defs.svg#icon-twitter"></use>
                                                     </svg>
                                                 </a>
                                             </li>
-                                            <li class="social-net-item">
-                                                <a class="sn-border">
-                                                    <svg class="social-net-icon" width="20" height="20">
+                                            <li class="team__social-net__item">
+                                                <a class="team__sn-border">
+                                                    <svg class="team__social-net__icon" width="20" height="20">
                                                         <use href="img/symbol-defs.svg#icon-facebook"></use>
                                                     </svg>
                                                 </a>
                                             </li>
-                                            <li class="social-net-item">
-                                                <a class="sn-border">
-                                                    <svg class="social-net-icon" width="20" height="20">
+                                            <li class="team__social-net__item">
+                                                <a class="team__sn-border">
+                                                    <svg class="team__social-net__icon" width="20" height="20">
                                                         <use href="img/symbol-defs.svg#icon-linkedin"></use>
                                                     </svg>
                                                 </a>
@@ -282,38 +282,38 @@
                                         </ul>
                                     </div>
                             </li>
-                            <li class="teamCard">
+                            <li class="team__card">
                                     <div>
-                                        <img src="img/m.jpg" alt="" class="card-img">
+                                        <img src="img/m.jpg" alt="" class="team__img">
                                     </div>
-                                    <h4 class="teamName">Михайло Єрмаков</h4>
-                                    <p class="position">UI Designer</p>
-                                    <div class="social-net">
-                                        <ul class="social-net-list">
-                                            <li class="social-net-item">
-                                                <a class="sn-border">
-                                                    <svg class="social-net-icon" width="20" height="20">
+                                    <h4 class="team__name">Михайло Єрмаков</h4>
+                                    <p class="team__position">UI Designer</p>
+                                    <div class="team__social-net">
+                                        <ul class="team__social-net__list">
+                                            <li class="team__social-net__item">
+                                                <a class="team__sn-border">
+                                                    <svg class="team__social-net__icon" width="20" height="20">
                                                         <use href="img/symbol-defs.svg#icon-instagram"></use>
                                                     </svg>
                                                 </a>
                                             </li>
-                                            <li class="social-net-item">
-                                                <a class="sn-border">
-                                                    <svg class="social-net-icon" width="20" height="20">
+                                            <li class="team__social-net__item">
+                                                <a class="team__sn-border">
+                                                    <svg class="team__social-net__icon" width="20" height="20">
                                                         <use href="img/symbol-defs.svg#icon-twitter"></use>
                                                     </svg>
                                                 </a>
                                             </li>
-                                            <li class="social-net-item">
-                                                <a class="sn-border">
-                                                    <svg class="social-net-icon" width="20" height="20">
+                                            <li class="team__social-net__item">
+                                                <a class="team__sn-border">
+                                                    <svg class="team__social-net__icon" width="20" height="20">
                                                         <use href="img/symbol-defs.svg#icon-facebook"></use>
                                                     </svg>
                                                 </a>
                                             </li>
-                                            <li class="social-net-item">
-                                                <a class="sn-border">
-                                                    <svg class="social-net-icon" width="20" height="20">
+                                            <li class="team__social-net__item">
+                                                <a class="team__sn-border">
+                                                    <svg class="team__social-net__icon" width="20" height="20">
                                                         <use href="img/symbol-defs.svg#icon-linkedin"></use>
                                                     </svg>
                                                 </a>
@@ -328,46 +328,46 @@
 
             <section class="customers">
                 <div class="container">
-                    <h2 class="sectionTitle">Постійні клієнти</h2>
-                    <ul class="customers-list">
-                        <li class="customers-item">
-                            <a class="customers-wrap" href="#">
-                                <svg class="customers-logo" width="106" height="60">
+                    <h2 class="section__title">Постійні клієнти</h2>
+                    <ul class="customers__list">
+                        <li class="customers__item">
+                            <a class="customers__wrap" href="#">
+                                <svg class="customers__logo" width="106" height="60">
                                     <use href="img/symbol-defs.svg#icon-first"></use>
                                 </svg>
                             </a>
                         </li>
-                        <li class="customers-item">
-                            <a class="customers-wrap" href="#">
-                                <svg class="customers-logo" width="106" height="60">
+                        <li class="customers__item">
+                            <a class="customers__wrap" href="#">
+                                <svg class="customers__logo" width="106" height="60">
                                     <use href="img/symbol-defs.svg#icon-second"></use>
                                 </svg> 
                             </a>
                         </li>
-                        <li class="customers-item">
-                            <a class="customers-wrap" href="#">
-                                <svg class="customers-logo" width="106" height="60">
+                        <li class="customers__item">
+                            <a class="customers__wrap" href="#">
+                                <svg class="customers__logo" width="106" height="60">
                                     <use href="img/symbol-defs.svg#icon-third"></use>
                                 </svg>
                             </a>
                         </li>
-                        <li class="customers-item">
-                            <a class="customers-wrap" href="#">
-                                <svg class="customers-logo" width="106" height="60">
+                        <li class="customers__item">
+                            <a class="customers__wrap" href="#">
+                                <svg class="customers__logo" width="106" height="60">
                                     <use href="img/symbol-defs.svg#icon-four"></use>
                                 </svg>
                             </a>
                         </li>
-                        <li class="customers-item">
-                            <a class="customers-wrap" href="#">
-                                <svg class="customers-logo" width="106" height="60">
+                        <li class="customers__item">
+                            <a class="customers__wrap" href="#">
+                                <svg class="customers__logo" width="106" height="60">
                                     <use href="img/symbol-defs.svg#icon-five"></use>
                                 </svg>
                             </a>
                         </li>
-                        <li class="customers-item">
-                            <a class="customers-wrap" href="#">
-                                <svg class="customers-logo" width="106" height="60">
+                        <li class="customers__item">
+                            <a class="customers__wrap" href="#">
+                                <svg class="customers__logo" width="106" height="60">
                                     <use href="img/symbol-defs.svg#icon-six"></use>
                                 </svg>
                             </a>
@@ -400,7 +400,7 @@
             <div class="social-net-part">
                 <h4 class="footer-title">Приєднуйтесь</h4>
                 <div>
-                    <ul class="social-net-footer-list">
+                    <ul class="team__social-net-footer-list">
                         <li class="social-net-footer-item">
                             <a class="sn-border-footer">
                                 <svg class="social-net-icon-footer" width="20" height="20">

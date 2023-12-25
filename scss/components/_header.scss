@@ -45,7 +45,7 @@
     &:focus {
         color: $buttonBgColor;
     }
-    &k--active {
+    &--active {
         color: $buttonBgColor;
         position: relative;
     }
@@ -83,7 +83,7 @@
         align-items: center;
         transition: color 250ms $timeFunction;
     }
-    &__info-email {
+    &__info--email {
         margin-right: 30px;
     }
 }
@@ -91,12 +91,10 @@
 .contacts-list__icon {
     margin-right: 10px;
     fill: $primaryTextColor;
-    &_:hover {
-        color: $buttonBgColor;
-    }
 }
 
 .contacts-list__info:hover {
+    color: $buttonBgColor;
     .contacts-list__icon {
         animation: cgHeader 250ms $timeFunction;
         animation-fill-mode: forwards;

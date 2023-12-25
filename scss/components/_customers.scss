@@ -1,0 +1,43 @@
+.customers {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__logo {
+        fill: $iconColor;
+    }
+}
+
+.customers__wrap {
+    width: 170px;
+    height: 92px;
+    border-radius: 4px;
+    border: 1px solid $iconColor;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: border 250ms $timeFunction;
+    &:hover {
+        border: 1px solid $buttonBgColor;
+    }
+}
+
+.customers__wrap:hover {
+    .customers__logo {
+        animation: cgLogo 250ms $timeFunction;
+        animation-fill-mode: forwards;
+    }
+}
+
+@keyframes cgLogo {
+    0% {
+        fill: $iconColor;
+    }
+
+    100% {
+        fill: $buttonBgColor;
+    }
+}

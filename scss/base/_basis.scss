@@ -6,7 +6,7 @@
 
 a {
     cursor: pointer;
-    color: var(--title-text-color);
+    color: $titleTextColor;
 }
 
 img {
@@ -21,8 +21,12 @@ img {
 }
 
 body {
-    color: var(--primary-text-color);
-    background: var(--primary-background-color);
+    color: $primaryTextColor;
+    background-color: $primaryBgColor;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
+}
+
+use {
+    cursor: pointer;
 }
