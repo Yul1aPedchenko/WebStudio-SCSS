@@ -25,23 +25,11 @@
         letter-spacing: 0.48px;
         text-align: center;
     }
-}
-
-.team__card {
-    width: 270px;
-    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-    border-radius: 0px 0px 4px 4px;
-    padding-bottom: 30px;
-    background-color: $primaryBgColor;
-    &:not(:last-child) {
-        margin-right: 30px;
+    &__social-net {
+        width: 206px;
+        text-align: center;
     }
-}
-
-.team__social-net {
-    width: 206px;
-    text-align: center;
-    &__list {
+    &__social-net-list {
         display: flex;
         align-items: center;
         margin-left: 32px;
@@ -52,6 +40,17 @@
     }
     &__icon {
         fill: $iconColor;
+    }
+}
+
+.team__card {
+    width: 270px;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    border-radius: 0px 0px 4px 4px;
+    padding-bottom: 30px;
+    background-color: $primaryBgColor;
+    &:not(:last-child) {
+        margin-right: 30px;
     }
 }
 
@@ -81,7 +80,7 @@
 }
 
 .team__sn-border:hover {
-    .team__social-net__icon {
+    .team__icon {
         animation: cgTeam 250ms $timeFunction;
         animation-fill-mode: forwards;
     }

@@ -596,6 +596,26 @@ use {
   letter-spacing: 0.48px;
   text-align: center;
 }
+.team__social-net {
+  width: 206px;
+  text-align: center;
+}
+.team__social-net-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 32px;
+  margin-top: 16px;
+}
+.team__item:not(:last-child) {
+  margin-right: 10px;
+}
+.team__icon {
+  fill: #AFB1B8;
+}
 
 .team__card {
   width: 270px;
@@ -607,27 +627,6 @@ use {
 }
 .team__card:not(:last-child) {
   margin-right: 30px;
-}
-
-.team__social-net {
-  width: 206px;
-  text-align: center;
-}
-.team__social-net__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-left: 32px;
-  margin-top: 16px;
-}
-.team__social-net__item:not(:last-child) {
-  margin-right: 10px;
-}
-.team__social-net__icon {
-  fill: #AFB1B8;
 }
 
 .team__sn-border {
@@ -671,7 +670,7 @@ use {
     background-color: #2196F3;
   }
 }
-.team__sn-border:hover .team__social-net__icon {
+.team__sn-border:hover .team__icon {
   -webkit-animation: cgTeam 250ms cubic-bezier(0.4, 0, 0.2, 1);
           animation: cgTeam 250ms cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-animation-fill-mode: forwards;
@@ -785,6 +784,12 @@ use {
   letter-spacing: 0.42px;
   text-transform: uppercase;
 }
+.footer__item:not(:last-child) {
+  margin-right: 10px;
+}
+.footer__icon {
+  fill: #ffffff;
+}
 
 .footer-list {
   -webkit-box-orient: vertical;
@@ -830,17 +835,11 @@ use {
   margin-left: 106px;
   margin-top: 15px;
 }
-.footer__social-net__list {
+.footer__social-net-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 20px;
-}
-.footer__social-net__item:not(:last-child) {
-  margin-right: 10px;
-}
-.footer__social-net__icon {
-  fill: #ffffff;
 }
 
 .footer__sn-border {
@@ -1157,6 +1156,12 @@ use {
   letter-spacing: 0.42px;
   text-transform: uppercase;
 }
+.footer__item:not(:last-child) {
+  margin-right: 10px;
+}
+.footer__icon {
+  fill: #ffffff;
+}
 
 .footer-list {
   -webkit-box-orient: vertical;
@@ -1202,17 +1207,11 @@ use {
   margin-left: 106px;
   margin-top: 15px;
 }
-.footer__social-net__list {
+.footer__social-net-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 20px;
-}
-.footer__social-net__item:not(:last-child) {
-  margin-right: 10px;
-}
-.footer__social-net__icon {
-  fill: #ffffff;
 }
 
 .footer__sn-border {

@@ -14,6 +14,12 @@
         letter-spacing: 0.42px;
         text-transform: uppercase;
     }
+    &__item:not(:last-child) {
+        margin-right: 10px;
+    }
+    &__icon {
+        fill: $primaryBgColor;
+    }
 }
 
 .footer-list {
@@ -57,15 +63,9 @@
 .footer__social-net {
     margin-left: 106px;
     margin-top: 15px;
-    &__list {
+    &-list {
         display: flex;
         margin-top: 20px;
-    }
-    &__item:not(:last-child) {
-        margin-right: 10px;
-    }
-    &__icon {
-        fill: $primaryBgColor;
     }
 }
 
