@@ -2,7 +2,7 @@
     padding-top: 94px;
     padding-bottom: 94px;
     &__title {
-        @include section_title;
+        @include section_title();
     }
     &__list {
         @extend %flex-box;

@@ -4,8 +4,9 @@
         color: $titleTextColor;
         font-weight: 500;
         letter-spacing: 0.28px;
-        @extend %flex-box;
+        display: flex;
         align-items: center;
+        justify-content: space-between;
         margin-top: 25px;
         margin-bottom: 24px;
     }

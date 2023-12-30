@@ -142,7 +142,7 @@
 
 .footer-form__subscribe-btn {
     @extend %flex;
-    @include button;
+    @include button();
     padding: 10px 28px;
     &:hover {
         background-color: $buttonHoverColor;

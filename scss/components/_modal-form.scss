@@ -144,7 +144,7 @@
 }
 
 .post-modal__btn {
-    @include button;
+    @include button();
     max-width: 200px;
     padding: 10px 52px;
     margin: 0 auto;
