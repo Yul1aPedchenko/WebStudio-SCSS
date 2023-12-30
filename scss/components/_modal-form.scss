@@ -125,9 +125,7 @@
     letter-spacing: 0.42px;
     margin-top: 20px;
     text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %flex;
 
     &__check {
         margin-right: 8.38px;
@@ -146,21 +144,11 @@
 }
 
 .post-modal__btn {
-    background-color: $buttonBgColor;
-    color: $primaryBgColor;
-    border: none;
-    border-radius: 4px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 30px;
-    letter-spacing: 0.96px;
+    @include button;
     max-width: 200px;
     padding: 10px 52px;
     margin: 0 auto;
     margin-top: 40px;
-    transition: backround-color 250ms $timeFunction;
-
     &:hover {
         background-color: $buttonHoverColor;
     }

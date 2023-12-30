@@ -1,0 +1,21 @@
+@mixin button() {
+    background-color: $buttonBgColor;
+    color: $primaryBgColor;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.96px;
+    transition: background-color 250ms $timeFunction;
+}
+
+@mixin section_title() {
+    color: $titleTextColor;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 1.08px;
+    text-align: center;
+    margin-bottom: 50px;
+}

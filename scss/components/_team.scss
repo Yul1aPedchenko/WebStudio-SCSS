@@ -2,6 +2,9 @@
     background-color: $teamBgColor;
     padding-top: 94px;
     padding-bottom: 94px;
+    &__title {
+        @include section_title;
+    }
     &__list {
         display: flex;
         margin-right: 30px;
@@ -57,9 +60,7 @@
 .team__sn-border {
     width: 44px;
     height: 44px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %flex;
     background-color: $primaryBgColor;
     border-radius: 50%;
     &:hover {

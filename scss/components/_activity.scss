@@ -1,8 +1,10 @@
 .activity {
     padding-bottom: 94px;
+    &__title {
+        @include section_title;
+    }
     &__list {
-        display: flex;
-        justify-content: space-between;
+        @extend %flex;
     }
     &__img {
         width: 370px;
@@ -10,9 +12,7 @@
     }
     &__item {
         position: relative;
-        display: flex;
-        justify-content: center;
-        text-align: center;
+        @extend %flex;
     }
     &__text {
         position: absolute;
