@@ -11,11 +11,20 @@
     transition: background-color 250ms $timeFunction;
 }
 
-@mixin section_title() {
+@mixin section_desktop-title() {
     color: $titleTextColor;
     font-size: 36px;
     font-weight: 700;
     letter-spacing: 1.08px;
     text-align: center;
     margin-bottom: 50px;
+}
+
+@mixin section_title() {
+    color: $titleTextColor;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 0.84px;
+    text-align: center;
+    margin-bottom: 30px;
 }

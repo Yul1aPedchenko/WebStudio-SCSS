@@ -11,7 +11,8 @@
         @include section_title();
     }
     .activity__list {
-        @extend %flex-box;
+        display: flex;
+        justify-content: space-between;
     }
     .activity__img {
         width: 370px;
