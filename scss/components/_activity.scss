@@ -1,22 +1,29 @@
 .activity {
-    padding-bottom: 94px;
-    &__title {
+    display: none;
+}
+
+@media screen and (min-width: 1200px) {
+    .activity {
+        padding-bottom: 94px;
+        display: block;
+    }
+    .activity__title {
         @include section_title();
     }
-    &__list {
+    .activity__list {
         @extend %flex-box;
     }
-    &__img {
+    .activity__img {
         width: 370px;
         height: 294px;
     }
-    &__item {
+    .activity__item {
         position: relative;
         display: flex;
         justify-content: center;
         text-align: center;
     }
-    &__text {
+    .activity__text {
         position: absolute;
         text-transform: uppercase;
         color: $primaryBgColor;

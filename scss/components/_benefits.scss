@@ -1,15 +1,12 @@
 .benefits {
-    &__list {
-        display: flex;
-        align-items: flex-start;
-        margin-top: 94px;
-        margin-bottom: 94px;
-    }
+    padding-top: 60px;
+    padding-bottom: 60px;
     &__title {
         color: $titleTextColor;
         font-weight: 700;
         letter-spacing: 0.42px;
         margin-top: 30px;
+        text-align: center;
     }
     &__text {
         font-weight: 400;
@@ -19,11 +16,9 @@
     }
 }
 
-.benefits__block {
-    width: 270px;
-    &:not(:last-child) {
-        margin-right: 30px;
-    }
+.benefits__item {
+    max-width: 450px;
+    margin-bottom: 30px;
     &::before {
         content: '';
         display: block;
@@ -44,5 +39,30 @@
     }
     &:last-child::before {
         background-image: url(../img/astronaut.png);
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .benefits__item {
+        width: 354px;
+    }
+    .benefits__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .benefits {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+    .benefits__item {
+        width: 270px;
+    }
+    .benefits__title {
+        text-align: left;
     }
 }
