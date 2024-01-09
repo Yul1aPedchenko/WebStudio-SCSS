@@ -1,7 +1,7 @@
 .team {
     background-color: $teamBgColor;
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 30px;
     &__title {
         @include section_title;
     }
@@ -48,9 +48,7 @@
     border-radius: 0px 0px 4px 4px;
     padding-bottom: 30px;
     background-color: $primaryBgColor;
-    &:not(:last-child) {
-        margin-bottom: 30px;
-    }
+    margin-bottom: 30px;
 }
 
 .team__sn-border {
@@ -114,21 +112,21 @@
     .team__social-net-list {
         margin-left: 74px;
     }
- }
+}
 
 @media screen and (min-width: 1200px) {
     .team {
         padding-top: 94px;
-        padding-bottom: 94px;
+        padding-bottom: 64px;
     }
     .team__list {
         display: flex;
     }
     .team__card {
         width: 270px;
-    }
-    .team__card:not(:last-child) {
-        margin-left: 30px;
+        &:nth-child(2) {
+            margin-right: 30px;
+        }
     }
     .team__img {
         width: 270px;
