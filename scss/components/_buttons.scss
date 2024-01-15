@@ -1,11 +1,12 @@
 .buttons {
     &__section {
-        padding-top: 94px;
-        padding-bottom: 50px;
+        padding-top: 60px;
+        padding-bottom: 40px;
     }
     &__list {
         display: flex;
-        justify-content: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
     &__wrapper:not(:last-child) {
         margin-right: 8px;

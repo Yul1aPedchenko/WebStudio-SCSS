@@ -3,9 +3,9 @@
         margin-bottom: 94px;
     }
     &__list {
-        flex-wrap: wrap;
         display: flex;
-        gap: 30px;
+        flex-wrap: wrap;
+        text-align: left;
     }
     &__wrap {
         position: relative;
@@ -39,9 +39,8 @@
 
 .card__item {
     border: 1px solid #EEE;
-    width: 370px;
+    width: 300px;
     background-color: #FFF;
-    flex-basis: calc((100% - 60px)/ 3);
     cursor: pointer;
     transition: box-shadow 250ms $timeFunction;
     &:hover {
