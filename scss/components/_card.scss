@@ -1,11 +1,10 @@
 .card {
     &__section {
-        margin-bottom: 94px;
+        margin-bottom: 30px;
     }
     &__list {
         display: flex;
         flex-wrap: wrap;
-        text-align: left;
     }
     &__wrap {
         position: relative;
@@ -39,10 +38,12 @@
 
 .card__item {
     border: 1px solid #EEE;
-    width: 300px;
+    width: 450px;
     background-color: #FFF;
     cursor: pointer;
     transition: box-shadow 250ms $timeFunction;
+    margin: 0 auto;
+    margin-bottom: 30px;
     &:hover {
         box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
     }
@@ -71,5 +72,28 @@
     .overlay {
         transform: translateY(0);
         opacity: 1;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .card__list {
+        justify-content: space-between;
+    }
+    .card__item {
+        width: 354px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .card__section {
+        margin-bottom: 94px;
+    }
+    .card__list {
+        gap: 30px;
+    }
+    .card__item {
+        width: 370px;
+        flex-basis: calc((100% - 60px)/ 3);
+        margin-bottom: 0;
     }
 }

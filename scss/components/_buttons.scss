@@ -1,12 +1,11 @@
 .buttons {
     &__section {
         padding-top: 60px;
-        padding-bottom: 40px;
+        padding-bottom: 25px;
     }
     &__list {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
     }
     &__wrapper:not(:last-child) {
         margin-right: 8px;
@@ -26,6 +25,7 @@
     transition-property: background-color, color;
     transition-duration: 250ms, 250ms;
     transition-timing-function: $timeFunction, $timeFunction;
+    margin-bottom: 15px;
     &:hover,
     &:focus {
         background-color: $buttonBgColor;
@@ -40,5 +40,23 @@
     }
     &--active:hover {
         background-color: $buttonHoverColor;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .buttons__section {
+        padding-bottom: 30px;
+    }
+    .buttons__list {
+        flex-wrap: nowrap;
+        margin-bottom: 0;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .buttons__section {
+        padding-top: 94px;
+        padding-bottom: 50px;
     }
 }
