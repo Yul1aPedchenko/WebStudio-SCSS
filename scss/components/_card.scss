@@ -82,6 +82,7 @@
     .card__list {
         gap: 30px;
         flex-basis: calc((100% - 60px)/ 2);
+        justify-content: start;
     }
     .card__item {
         width: 354px;
