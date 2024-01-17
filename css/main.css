@@ -1448,13 +1448,17 @@ use {
 }
 
 @media screen and (min-width: 768px) {
+  .card__section {
+    margin-bottom: 60px;
+  }
   .card__list {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    gap: 30px;
+    -ms-flex-preferred-size: calc((100% - 60px) / 2);
+        flex-basis: calc((100% - 60px) / 2);
   }
   .card__item {
     width: 354px;
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1462,7 +1466,9 @@ use {
     margin-bottom: 94px;
   }
   .card__list {
-    gap: 30px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .card__item {
     width: 370px;

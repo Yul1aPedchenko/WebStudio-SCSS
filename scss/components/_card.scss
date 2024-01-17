@@ -76,11 +76,16 @@
 }
 
 @media screen and (min-width: 768px) {
+    .card__section {
+        margin-bottom: 60px;
+    }
     .card__list {
-        justify-content: space-between;
+        gap: 30px;
+        flex-basis: calc((100% - 60px)/ 2);
     }
     .card__item {
         width: 354px;
+        margin-bottom: 0;
     }
 }
 
@@ -89,7 +94,7 @@
         margin-bottom: 94px;
     }
     .card__list {
-        gap: 30px;
+        justify-content: space-between;
     }
     .card__item {
         width: 370px;
