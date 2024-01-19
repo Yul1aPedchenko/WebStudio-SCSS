@@ -5,7 +5,6 @@
 @media screen and (min-width: 1200px) {
     .activity {
         padding-bottom: 94px;
-        display: block;
     }
     .activity__title {
         @include section_title();

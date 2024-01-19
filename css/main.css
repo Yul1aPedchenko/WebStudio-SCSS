@@ -460,6 +460,9 @@ use {
 .label-checkbox__check:checked {
   background-color: #2196F3;
 }
+.label-checkbox__text {
+  font-size: 12px;
+}
 .label-checkbox__text-link {
   color: #2196F3;
   line-height: 24px;
@@ -568,7 +571,6 @@ use {
 @media screen and (min-width: 1200px) {
   .activity {
     padding-bottom: 94px;
-    display: block;
   }
   .activity__title {
     color: #212121;

@@ -134,7 +134,9 @@
     &__check:checked {
         background-color: $buttonBgColor;
     }
-
+    &__text {
+        font-size: 12px;
+    }
     &__text-link {
         color: $buttonBgColor;
         line-height: 24px;
