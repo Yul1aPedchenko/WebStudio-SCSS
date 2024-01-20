@@ -733,6 +733,7 @@ use {
 
 @media screen and (min-width: 1200px) {
   .activity {
+    display: block;
     padding-bottom: 94px;
   }
   .activity__title {
