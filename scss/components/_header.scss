@@ -1,57 +1,185 @@
 .header {
-    border-bottom: 1px solid #ECECEC;
-    &__wrapper {
-        color: $titleTextColor;
-        font-weight: 500;
-        letter-spacing: 0.28px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-top: 25px;
-        margin-bottom: 24px;
-    }
+  border-bottom: 1px solid #ececec;
+  &__wrapper {
+    color: $titleTextColor;
+    font-weight: 500;
+    letter-spacing: 0.28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__menu-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px 15px;
+  }
 }
 
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__menu-logo,
 .header__logo {
-    color: $logoColor;
-    font-family: 'Raleway';
-    font-size: 26px;
-    font-weight: 700;
-    letter-spacing: 0.78px;
-    &__blue {
-        color: $buttonBgColor;
-    }
+  color: $logoColor;
+  font-family: "Raleway";
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0.72px;
+  &__blue {
+    color: $buttonBgColor;
+  }
+}
+
+.menu-toggle {
+  align-items: center;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 40px;
+  background-color: $primaryBgColor;
+  z-index: 999;
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: #fff;
+}
+
+.mobile__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobile__link {
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: 0.8px;
+  color: $titleTextColor;
+  transition: color 250ms $timeFunction;
+  &--active {
+    color: $buttonBgColor;
+  }
+  &:hover {
+    color: $buttonBgColor;
+  }
 }
 
 .nav {
-    &__list {
-        @extend %flex-box;
-    }
-    &__item:not(:last-child) {
-        margin-right: 50px;
-    }
+.mobile__info-wrap {
+  vertical-align: bottom;
 }
 
-.nav__link {
+.mobile__contacts-info {
+  font-size: 34px;
+  font-weight: 500;
+  letter-spacing: 0.68px;
+  transition: color 250ms $timeFunction;
+  &:hover {
+    color: $buttonBgColor;
+  }
+}
+
+.mobile__contacts-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobile__nets {
+  &-list {
+    display: flex;
+    margin-top: 32px;
+    flex-wrap: wrap;
+  }
+  &-link {
+    color: $buttonBgColor;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0.36px;
+  }
+}
+
+.mobile__nets-item:not(:last-child) {
+  padding-right: 10px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  border-right: 1px solid $modalInputColor;
+}
+
+@media screen and (min-width: 480px) {
+  .mobile__nets-list {
+    flex-wrap: nowrap;
+  }
+}
+
+@media (max-width: 767px) {
+  .header__logo {
+    display: none;
+  }
+  .nav__list {
+    display: none;
+  }
+  .contacts-list {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .menu-toggle,
+  .header__menu-logo {
+    display: none;
+  }
+  .header__wrapper {
+    padding: 21px 0;
+  }
+  .nav {
+    &__list {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__item:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+  .nav__link {
     position: relative;
     transition: color 250ms $timeFunction;
     &_:not(:last-child) {
-        text-decoration: none;
-        color: $titleTextColor;
-        margin-right: 50px;
+      text-decoration: none;
+      color: $titleTextColor;
+      margin-right: 50px;
     }
     &:hover,
     &:focus {
-        color: $buttonBgColor;
+      color: $buttonBgColor;
     }
     &--active {
-        color: $buttonBgColor;
-        position: relative;
+      color: $buttonBgColor;
+      position: relative;
     }
-}
-
-.nav__link.nav__link--active::after {
-    content: '';
+  }
+  .nav__link.nav__link--active::after {
+    content: "";
     display: block;
     width: 48px;
     height: 4px;
@@ -59,53 +187,73 @@
     background-color: $buttonBgColor;
     position: absolute;
     left: 0;
-    top: 44.5px;
+    top: 48px;
     width: 100%;
     transition: background-color 250ms $timeFunction;
-}
-
-.nav__link:hover {
+  }
+  .nav__link:hover {
     &--active::after {
-        background-color: $buttonHoverColor;
-        transition: background-color 250ms $timeFunction;
+      background-color: $buttonHoverColor;
+      transition: background-color 250ms $timeFunction;
     }
-}
-
-.contacts-list {
+  }
+  .contacts-list {
+  &__item {
     display: flex;
-    &__item {
-        display: flex;
-        align-items: center;
-    }
-    &__info {
-        display: flex;
-        align-items: center;
-        transition: color 250ms $timeFunction;
-    }
-    &__info--email {
-        margin-right: 30px;
-    }
+    align-items: center;
+  }
+  &__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  &__info {
+    display: flex;
+    align-items: center;
+    transition: color 250ms $timeFunction;
+  }
+  &__info--email {
+    margin-right: 30px;
+  }
 }
-
-.contacts-list__icon {
-    margin-right: 10px;
+  .contacts-list__icon {
+    margin-right: 8px;
     fill: $primaryTextColor;
-}
-
-.contacts-list__info:hover {
+  }
+  .contacts-list__info:hover {
     color: $buttonBgColor;
     .contacts-list__icon {
-        animation: cgHeader 250ms $timeFunction;
-        animation-fill-mode: forwards;
+      animation: cgHeader 250ms $timeFunction;
+      animation-fill-mode: forwards;
     }
-}
-
-@keyframes cgHeader {
+  }
+  @keyframes cgHeader {
     0% {
-        fill: $primaryTextColor;
+      fill: $primaryTextColor;
     }
 
     100% {
-        fill: $buttonBgColor;
+      fill: $buttonBgColor;
+    }
+  }
+  .header__menu-wrap {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+    .header__wrapper {
+        padding-top: 25px;
+        padding-bottom: 24px;
+    }
+    .nav__link.nav__link--active::after {
+        top: 44.5px;
+    }
+    .contacts-list {
+        display: flex;
+        &__item:not(:last-child) {
+            margin-bottom: 0;
+        }
+    }
+    .contacts-list__icon {
+        margin-right: 10px;
     }
 }

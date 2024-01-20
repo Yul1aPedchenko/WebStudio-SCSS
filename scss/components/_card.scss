@@ -39,7 +39,7 @@
 .card__item {
     border: 1px solid #EEE;
     width: 450px;
-    background-color: #FFF;
+    background-color: $primaryBgColor;
     cursor: pointer;
     transition: box-shadow 250ms $timeFunction;
     margin: 0 auto;
