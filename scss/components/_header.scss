@@ -85,10 +85,9 @@
   }
 }
 
-.mobile__info-wrap {
-  vertical-align: bottom;
+.mobile__contacts-list {
+  margin-top: 302px;
 }
-
 .mobile__contacts-info {
   font-size: 34px;
   font-weight: 500;
@@ -106,7 +105,7 @@
 .mobile__nets {
   &-list {
     display: flex;
-    margin-top: 32px;
+    margin-top: 64px;
     flex-wrap: wrap;
   }
   &-link {

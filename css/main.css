@@ -199,8 +199,8 @@ use {
   color: #2196F3;
 }
 
-.mobile__info-wrap {
-  vertical-align: bottom;
+.mobile__contacts-list {
+  margin-top: 302px;
 }
 
 .mobile__contacts-info {
@@ -222,7 +222,7 @@ use {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 32px;
+  margin-top: 64px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -1042,6 +1042,9 @@ use {
   }
 }
 @media screen and (min-width: 768px) {
+  .customers {
+    padding-bottom: 60px;
+  }
   .customers__wrap {
     width: 226px;
   }
@@ -1471,8 +1474,8 @@ use {
   color: #2196F3;
 }
 
-.mobile__info-wrap {
-  vertical-align: bottom;
+.mobile__contacts-list {
+  margin-top: 302px;
 }
 
 .mobile__contacts-info {
@@ -1494,7 +1497,7 @@ use {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 32px;
+  margin-top: 64px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
