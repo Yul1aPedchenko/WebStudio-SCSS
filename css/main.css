@@ -376,7 +376,7 @@ use {
     padding-bottom: 24px;
   }
   .nav__link.nav__link--active::after {
-    top: 44.5px;
+    top: 43px;
   }
   .contacts-list {
     display: -webkit-box;
@@ -1671,7 +1671,7 @@ use {
     padding-bottom: 24px;
   }
   .nav__link.nav__link--active::after {
-    top: 44.5px;
+    top: 43px;
   }
   .contacts-list {
     display: -webkit-box;
