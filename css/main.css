@@ -410,7 +410,7 @@ use {
   letter-spacing: 1.56px;
   text-align: center;
   margin: 0 auto;
-  width: 360px;
+  max-width: 360px;
 }
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -693,7 +693,8 @@ use {
 }
 
 .benefits__item {
-  width: 450px;
+  max-width: 450px;
+  min-width: 290px;
   margin-bottom: 30px;
 }
 .benefits__item::before {
@@ -759,6 +760,12 @@ use {
   }
   .benefits__item:last-child::before {
     background-image: url(../img/benefits/astronaut@2x.webp);
+  }
+}
+@media screen and (min-width: 480px) {
+  .benefits__item {
+    max-width: 450px;
+    min-width: 450px;
   }
 }
 @media screen and (min-width: 768px) {

@@ -17,7 +17,8 @@
 }
 
 .benefits__item {
-  width: 450px;
+  max-width: 450px;
+  min-width: 290px;
   margin-bottom: 30px;
   &::before {
     content: "";
@@ -91,6 +92,13 @@
   }
   .benefits__item:last-child::before {
     background-image: url(../img/benefits/astronaut@2x.webp);
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .benefits__item {
+    max-width: 450px;
+    min-width: 450px;
   }
 }
 
