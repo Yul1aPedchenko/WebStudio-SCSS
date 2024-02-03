@@ -120,7 +120,6 @@
              </div>
         </section>
 
-        <div>
             <div class="benefits container">
                 <ul class="benefits__list">
                     <li class="benefits__item">
@@ -193,9 +192,13 @@
                             <li class="team__card">
                                     <div class="team__img-wrap">
                                         <picture>
-                                            <source srcset="img/team/igor.webp 1x, img/team/igor@2x.webp 2x" type="image/webp"/>
-                                            <source srcset="img/team/igor.jpg 1x, img/team/igor@2x.jpg 2x" type="image/jpg"/>
-                                            <img class="team__img" src="img/team/igor.jpg" alt="team person" />
+                                            <source srcset="img/team/igor-mobile@1x.jpg 1x, img/team/igor-mobile@2x.jpg 2x" media="(max-width: 699px)" type="image/jpg"/>
+                                            <source srcset="img/team/igor-tablet@1x.jpg 1x, img/team/igor-tablet@2x.jpg 2x" media="(min-width: 700px)" type="image/jpg"/>
+                                            <source srcset="img/team/igor-desktop@1x.jpg 1x, img/team/igor-desktop@2x.jpg 2x" media="(min-width: 1143px)" type="image/jpg"/>
+                                            <source srcset="img/team/igor-mobile@1x.webp 1x, img/team/igor-mobile@2x.webp 2x" media="(max-width: 699px)" type="image/webp"/>
+                                            <source srcset="img/team/igor-tablet@1x.webp 1x, img/team/igor-tablet@2x.webp 2x" media="(min-width: 700px)" type="image/webp"/>
+                                            <source srcset="img/team/igor-desktop@1x.webp 1x, img/team/igor-desktop@2x.webp 2x" media="(min-width: 1143px)" type="image/webp"/>
+                                            <img class="team__img" src="img/team/igor-desktop@1x.jpg" alt="team person" />
                                         </picture>
                                     </div>
                                     <h4 class="team__name">Ігор Дем'яненко</h4>
@@ -415,7 +418,6 @@
                     </ul>
                 </div>
             </section> 
-        </div>
     </main>
 
     <footer class="footer">
