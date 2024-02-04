@@ -73,7 +73,7 @@ use {
   cursor: pointer;
 }
 
-.footer-form__subscribe-btn, .footer__sn-border, .customers__wrap, .team__sn-border, .label-checkbox {
+.footer-form__subscribe-btn, .footer__sn-border, .customers__wrap, .team__sn-border {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -264,7 +264,8 @@ use {
     display: none;
   }
   .header__wrapper {
-    padding: 21px 0;
+    padding-top: 21px;
+    padding-bottom: 21px;
   }
   .nav__list {
     display: -webkit-box;
@@ -371,6 +372,10 @@ use {
   }
 }
 @media screen and (min-width: 1200px) {
+  .menu-toggle,
+  .header__menu-logo {
+    display: none;
+  }
   .header__wrapper {
     padding-top: 25px;
     padding-bottom: 24px;
@@ -410,7 +415,7 @@ use {
   letter-spacing: 1.56px;
   text-align: center;
   margin: 0 auto;
-  width: 360px;
+  max-width: 360px;
 }
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -484,7 +489,7 @@ use {
     line-height: 60px;
     letter-spacing: 2.64px;
     margin: 0 auto;
-    width: 690px;
+    max-width: 690px;
   }
   .post__btn {
     padding: 10px 32px;
@@ -527,13 +532,14 @@ use {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #ffffff;
-  min-width: 528px;
+  min-width: 290px;
+  max-width: 450px;
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  padding: 40px;
+  padding: 30px;
   border-radius: 4px;
   -webkit-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
@@ -560,12 +566,16 @@ use {
   right: 8px;
   cursor: pointer;
 }
+.post-modal__icon-close:hover {
+  fill: #2196F3;
+}
 .post-modal__title {
   color: #212121;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
   letter-spacing: 0.6px;
   text-align: center;
+  min-width: 210px;
 }
 .post-modal__form {
   display: -webkit-box;
@@ -624,7 +634,7 @@ use {
   width: 100%;
   padding-top: 12px;
   padding-left: 16px;
-  padding-bottom: 94px;
+  padding-bottom: 64px;
 }
 .post-modal__text--comment::-webkit-input-placeholder {
   color: rgba(117, 117, 117, 0.5);
@@ -653,10 +663,17 @@ use {
 }
 
 .label-checkbox {
-  line-height: 24px;
-  letter-spacing: 0.42px;
-  margin-top: 20px;
-  text-align: center;
+  margin-top: 10px;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: self-start;
+      -ms-flex-align: self-start;
+          align-items: self-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
 }
 .label-checkbox__check {
   margin-right: 8.38px;
@@ -665,7 +682,8 @@ use {
   background-color: #2196F3;
 }
 .label-checkbox__text {
-  font-size: 12px;
+  min-width: 190px;
+  font-size: 10px;
 }
 .label-checkbox__text-link {
   color: #2196F3;
@@ -690,12 +708,50 @@ use {
   max-width: 200px;
   padding: 10px 52px;
   margin: 0 auto;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 .post-modal__btn:hover {
   background-color: #37A0F4;
 }
 
+@media screen and (min-width: 480px) {
+  .post-modal {
+    padding: 40px;
+    min-width: 450px;
+  }
+  .post-modal__title {
+    font-size: 20px;
+  }
+  .post-modal__text--comment {
+    padding-bottom: 92px;
+  }
+  .label-checkbox {
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    letter-spacing: 0.42px;
+    margin-top: 20px;
+  }
+  .label-checkbox__text {
+    font-size: 12px;
+    line-height: 24px;
+  }
+  .post-modal__btn {
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .post-modal {
+    min-width: 528px;
+  }
+  .post-modal__text--comment {
+    padding-bottom: 94px;
+  }
+}
 .benefits {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -792,7 +848,8 @@ use {
 }
 @media screen and (min-width: 768px) {
   .benefits__item {
-    width: 354px;
+    max-width: 354px;
+    min-width: 354px;
   }
   .benefits__list {
     display: -webkit-box;
@@ -811,7 +868,8 @@ use {
     padding-bottom: 94px;
   }
   .benefits__item {
-    width: 270px;
+    max-width: 270px;
+    min-width: 270px;
   }
   .benefits__title {
     text-align: left;
@@ -1400,9 +1458,8 @@ use {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   .footer__social-net {
     margin-top: 0;
@@ -1629,7 +1686,8 @@ use {
     display: none;
   }
   .header__wrapper {
-    padding: 21px 0;
+    padding-top: 21px;
+    padding-bottom: 21px;
   }
   .nav__list {
     display: -webkit-box;
@@ -1736,6 +1794,10 @@ use {
   }
 }
 @media screen and (min-width: 1200px) {
+  .menu-toggle,
+  .header__menu-logo {
+    display: none;
+  }
   .header__wrapper {
     padding-top: 25px;
     padding-bottom: 24px;
@@ -1865,7 +1927,7 @@ use {
 }
 
 .card__item {
-  border: 1px solid #EEE;
+  border: 1px solid #eee;
   width: 450px;
   background-color: #ffffff;
   cursor: pointer;
@@ -1873,7 +1935,6 @@ use {
   transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  margin: 0 auto;
   margin-bottom: 30px;
 }
 .card__item:hover {
@@ -2183,9 +2244,8 @@ use {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   .footer__social-net {
     margin-top: 0;
